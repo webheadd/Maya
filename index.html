@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maya</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav id="home">
+	<p>MAYA</p>
+	<div id="burger" onclick="myFunction()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<ul id="menu">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#what-i-do">What I do</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#my-works">My Work</a></li>
+		<li><a href="#reviews">Review</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</nav>
+<div id="overlay">
+	<header>
+		<div>
+			<h1>Freshly Baked Everyday</h1>
+			<h4>cakes, cupcakes, etc.</h4>
+		</div>
+	</header>
+</div>
+	<section id="what-i-do">
+		<h1>- What I Do -</h1>
+		<div class="wrapper">
+			<ul>
+				<li>
+					<img src="cakes.jpg">
+					<h2>Designer Cakes</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+				<li>
+					<img src="cupcakes.jpg">
+					<h2>Creative Cupcakes</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+				<li>
+					<img src="cupcakes.jpg">
+					<h2>Other Pastries</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="about">
+		<h1>- About Me -</h1>
+		<div id="about-background">
+			<div>	
+				<h2>Mayette Mejares</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur.</p>
+			</div>	
+		</div>
+	</section>
+	<section id="my-works">
+		<h1>- My Works -</h1>
+		<div class="wrapper">
+			<ul>
+				<li>
+					<img src="pic-1.jpg">
+					<h2>Redhorse Cake</h2>
+					<h4>Birthday Cake</h4>
+				</li>
+				<li>
+					<img src="pic-6.jpg">
+					<h2>Cheesecake Bites</h2>
+					<h4>Baptismal Gift</h4>
+				</li>
+				<li>
+					<img src="pic-4.jpg">
+					<h2>Brownies</h2>
+					<h4>Dessert</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="reviews">
+		<h1>- Reviews -</h1>
+		<div class="vio-background reviews">
+			<div>
+				<img src="profpic.jpg">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod.”</p>
+				<p>- John Doe</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<h1>- Let's Talk -</h1>
+		<div id="contact-div">
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod.</p>
+				<form>
+					<input type="text" name="name" placeholder="Full Name"><br>
+					<input type="email" name="email" placeholder="E-Mail"><br>
+					<textarea></textarea><br>
+					<button>Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Copyright 2019 by Rodolfo Sta.Maria</p>
+	</footer>
+	<script type="text/javascript">
+		function myFunction() {
+		var a = document.getElementsByTagName("span");
+		var b = document.getElementById("menu");
+			a[0].classList.toggle("burgerToX-1");
+			a[1].classList.toggle("burgerToX-2");
+			a[2].classList.toggle("burgerToX-3");
+			b.classList.toggle("show");
+		}
+	</script>
+</body>
+</html>

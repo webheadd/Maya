@@ -1,0 +1,480 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Arial';
+}
+body {
+	background: #f9f9f9;
+}
+ul {
+	list-style-type: none;
+}
+ul, li, a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.3em;
+}
+h4 {
+	font-size: 1.2em;
+}
+.wrapper {
+	padding: 1em;
+}
+#burger {
+    width: 35px;
+    height: auto;
+    float: right;
+    margin: 10px 15px;
+    position: relative;
+    cursor: pointer;
+}
+#burger span {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background: black;
+    margin: 5px auto;
+    transition: 0.3s;
+}
+#burger span:first-child {
+	margin-top: 0;
+}
+/* hamburger to x */
+.burgerToX-1 {
+    transform: translateY(7px) rotate(45deg);
+}
+.burgerToX-2 {
+    opacity: 0;
+}
+.burgerToX-3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+nav ul {
+    width: 100%;
+    clear: right;
+    background: rgba(85, 85, 85, 0.8);
+    height: 0;
+    text-align: center;
+    position: absolute;
+    top: 41px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+/* show menu */
+.show {
+    height: 250px;
+}
+nav ul a{
+    font-size: 12px;
+    display: block;
+    padding: 14px 0;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav ul a:hover {
+    background: rgb(30, 30, 30)
+}
+nav p {
+	float: left;
+	margin: 10px 15px;
+	font-weight: bold;
+}
+#overlay {
+	clear: right;
+	width: 100%;
+	height: 250px;
+	background-image: url(cake-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+header {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	background: rgba(175, 174, 174, 0.5);
+}
+header div {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+header h1 {
+	margin-bottom: 5px;
+}
+section {
+	width: 100%;
+}
+section h1:first-child {
+	width: 170px;
+	padding: 8px 5px;
+	border: 2px solid #2cc1c0;
+	margin: 30px auto;
+	text-align: center;
+}
+#what-i-do ul {
+	width: 100%;
+	height: auto;
+	margin-top: -20px;
+}
+#what-i-do ul li {
+	text-align: center;
+	margin-bottom: 30px;
+}
+#what-i-do ul li:last-child {
+	margin-bottom: -20px;
+}
+#what-i-do ul li img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+#what-i-do ul li h2 {
+	margin: 8px 0;
+}
+#what-i-do ul li p {
+	width: 40%;
+	margin: 0 auto;
+	font-size: 0.9em;
+}
+#about-background h2 {
+	margin-bottom: 25px;
+}
+#about-background {
+	width: 100%;
+	height: 250px;
+}
+#about-background {
+	background: rgba(175, 174, 174, 0.9);
+	text-align: center;
+}
+#about-background div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 90%;
+	margin: 0 auto;
+}
+#my-works {
+	width: 100%;
+	height: auto;
+}
+#my-works ul {
+	margin-top: -20px;
+}
+#my-works ul li {
+	display: block;
+	width: 240px;
+	text-align: center;
+	margin: 0 auto 20px auto;
+	background: white;
+	box-shadow: 2px 2px 4px #ccc;
+	padding-bottom: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#my-works ul li img {
+	width: 100%;
+	height: 225px;
+	margin-bottom: 10px;
+}
+#my-works ul li:last-child {
+	margin-bottom: -20px;
+}
+#my-works ul li:hover {
+	box-shadow: 5px 5px 8px #ccc;
+}
+#my-works ul li h2 {
+	margin-bottom: 5px;
+}
+.reviews {
+	width: 100%;
+	height: 250px;
+	background: rgba(175, 174, 174, 0.9);
+	padding: 15px;
+	text-align: center;
+}
+.reviews div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.reviews img {
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+.reviews p {
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+#contact-div {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#contact-div div {
+	width: 100%;
+	height: auto;
+	margin: -5px auto 0 auto;
+	position: relative;
+}
+#contact-div p {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    border: 1px solid #ccc;
+    width: 60%;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+#contact-div div form {
+    width: 70%;
+	position: relative;
+	margin: 0 auto;
+}
+#contact-div form input, textarea {
+	width: 100%;
+	padding: 6px;
+	border: 1px solid #ccc;
+	margin: 0 auto 15px auto;
+}
+textarea {
+    height: 150px;
+}
+button {
+    width: 80;
+	padding: 6px 8px;
+	border: 1px solid #ccc;
+	background: #fff;
+	cursor: pointer;
+	margin: 0 auto;
+}
+footer {
+	width: 100%;
+	height: 50px;
+	background: rgba(175, 174, 174, 0.9);
+	text-align: center;
+}
+footer p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 12px;
+}
+
+/* 
+1281px desktop
+1025-1280px laptop-desktop
+768-1024px tablet, ipads
+481-767px low reso tablets, mobile (landscape)
+320-479px most smartphone
+*/
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+	#overlay {
+		height: 315px;
+	}
+	header h1 {
+		font-size: 1.8em;
+	}
+	header h4 {
+		font-size: 1.4em;
+	}
+	/* show menu */
+	.show {
+    	height: 315px;
+	}
+nav ul a{
+    font-size: 16px;
+    display: block;
+    padding: 17px 0;
+    color: white;
+    transition: 0.3s;
+}
+	#what-i-do ul {
+		display: flex;
+		margin-top: 10px;
+	}
+	#what-i-do ul li {
+		margin-bottom: 0;
+	}
+	#what-i-do ul li img {
+		width: 100px;
+		height: 100px;
+	}
+	#what-i-do ul li p {
+		width: 75%;
+	}
+	#my-works ul {
+		display: flex;
+	}
+	#my-works ul li {
+		width: 230px;
+		text-align: center;
+		margin: 0 auto;
+		background: white;
+		box-shadow: 2px 2px 4px #ccc;
+		border: 1px solid #e5e5e5;
+	}
+	#my-works ul li h4 {
+		font-weight: 200;
+	}
+	#my-works ul li img {
+		height: 210px;
+	}
+	#my-works ul li:last-child {
+		margin-bottom: 0;
+	}
+	.reviews img {
+		width: 105px;
+		height: 105px;
+	}
+}
+@media screen and (min-width: 1025px){
+	#overlay {
+		height: 400px;
+	}
+	header h1 {
+		font-size: 2.1em;
+	}
+	header h4 {
+		font-size: 1.7em;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	nav {
+	    width: 100%;
+	    height: auto;
+	    position: relative;
+	    z-index: 1;
+	}
+	nav ul {
+	    width: 50%;
+	    clear: right;
+	    background: none;
+	    height: auto;
+	    text-align: right;
+	    position: relative;
+	    top: 0;
+	    transition: 0.3s;
+	    float: right;
+	    margin-right: 8em;
+	}
+	nav ul a{
+	    font-size: 15px;
+	    padding: 14px;
+	    color: black;
+	}
+	nav ul a:hover {
+   		color: #2cc1c0;
+   		background: none;
+	}
+	nav p {
+		text-align: center;
+		float: left;
+		margin-left: 8em;
+		margin-top: 15px;
+		font-weight: bold;
+		position: relative;
+	}
+	#burger {
+		display: none;
+	}
+	#what-i-do ul {
+		width: 80%;
+		display: flex;
+		margin: 10px auto 0 auto;
+	}
+	#what-i-do ul li {
+		margin-bottom: 0;
+		margin: 0 auto;
+	}
+	#what-i-do ul li img {
+		width: 120px;
+		height: 120px;
+	}
+	#what-i-do ul li p {
+		width: 75%;
+	}
+	#my-works ul {
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#my-works ul li {
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+		background: white;
+		box-shadow: 2px 2px 4px #ccc;
+		border: 1px solid #e5e5e5;
+	}
+	#my-works ul li h4 {
+		font-weight: 200;
+	}
+	#my-works ul li img {
+		height: 230px;
+	}
+	#my-works ul li:last-child {
+		margin-bottom: 0;
+	}
+	.reviews img {
+		width: 115px;
+		height: 115px;
+	}
+	#contact-div p {
+		width: 50%;
+	}
+	#contact-div div form {
+		width: 50%;
+	}
+	#contact-div form input, textarea {
+		width: 100%;
+		padding: 6px;
+		border: 1px solid #ccc;
+		margin: 0 auto 15px auto;
+	}
+	
+	textarea {
+   		height: 150px;
+	}
+	button {
+	    width: 80;
+		padding: 6px 8px;
+		border: 1px solid #ccc;
+		background: #fff;
+		cursor: pointer;
+		margin: 0 auto;
+	}
+	footer {
+		height: 70px;
+	}
+	footer p {
+		font-size: 15px;
+	}
+}
